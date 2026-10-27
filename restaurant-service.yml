@@ -1,0 +1,12 @@
+server:
+  port: 1101
+
+spring:
+  config:
+    import: "common-config.yml"
+
+  datasource:
+    url: jdbc:postgresql://restaurant-db:5401/restaurantdb
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
