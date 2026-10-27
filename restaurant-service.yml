@@ -6,7 +6,7 @@ spring:
     import: "common-config.yml"
 
   datasource:
-    url: jdbc:postgresql://restaurant-db:5401/restaurantdb
+    url: jdbc:postgresql://localhost:5401/restaurantdb
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
