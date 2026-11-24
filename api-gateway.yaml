@@ -1,0 +1,12 @@
+server:
+  port: 8085
+spring:
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: auth-service
+              uri: ${AUTH_SERVICE_URI}
+              predicates:
+                - path=/auth/**
